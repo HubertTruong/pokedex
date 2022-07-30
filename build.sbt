@@ -4,5 +4,8 @@ ThisBuild / scalaVersion := "3.1.3"
 
 lazy val root = (project in file("."))
   .settings(
-    name := "pokedex"
+    name := "pokedex",
+    libraryDependencies ++= Seq(
+      "com.squareup.okhttp3" % "okhttp" % "4.10.0",
+    )
   )
